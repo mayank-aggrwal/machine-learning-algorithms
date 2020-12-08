@@ -13,7 +13,9 @@ while True:
     cv2.imshow('Video Frame', frame)
     cv2.imshow('Gray Video Frame', grayFrame)
     
-    key_pressed = cv2.waitKey(1) & 0xFF
+    q = cv2.waitKey(1)
+#     print(q)
+    key_pressed = q & 0xFF
     if key_pressed == ord('q'):
         break
 
